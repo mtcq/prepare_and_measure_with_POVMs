@@ -1,4 +1,4 @@
-%This code considers a PM scenario where Alice prepares the 6 eigenvetors of Pauli matrices and Bob measures the 24 snub cube measurements.
+%This code considers a PM scenario where Alice prepares the 6 eigenvectors of Pauli matrices and Bob measures the 24 snub cube measurements.
 %We show that the statistics of this scenario cannot be obtained by classical trits
 %The user may adapt this code for arbitrary states, measurements, and classical dimensions
 %Author: Marco Túlio Quintino, https://github.com/mtcq
