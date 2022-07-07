@@ -1,8 +1,10 @@
-## Code to accompany: [The classical cost of transmitting a qubit](https://arxiv.org/abs/xxx)
+## Code to accompany: [The classical cost of transmitting a qubit](https://arxiv.org/abs/2207.02244
+)
 #### Martin J. Renner, Armin Tavakoli, and Marco Túlio Quintino
 
 
-This is a repository for the article [The classical cost of transmitting a qubit](https://arxiv.org/abs/xxx).
+This is a repository for the article [The classical cost of transmitting a qubit](https://arxiv.org/abs/2207.02244
+).
 
  This code requires:
 - [cvx](http://cvxr.com/) - a free MATLAB toolbox for rapid prototyping of optimization problems.
