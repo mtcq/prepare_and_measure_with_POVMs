@@ -14,9 +14,8 @@ nL=dC^IA;  %Count the deterministic vertices
 
 % p(b|xy) = \sum_aL p_B(b|yaL) p_A(a|xL)
 cvx_begin
-variable pB_byaL(OB,IB,dC,nL)
+variable pB_byaL(OB,IB,dC,nL) nonnegative
 variable eta
-variable Pi(nL) nonnegative
 dual variable gamma{OB,IA,IB}
 
 for b=1:OB
@@ -29,12 +28,9 @@ end
 
 for y=1:IB
     for c=1:dC
-        for L=1:nL
-            for b=1:OB
-                pB_byaL(b,y,c,L)>=0;
-            end
+        if y ~= 1 || c ~= 1
+            sum(pB_byaL(:,y,c,:),1) == sum(pB_byaL(:,1,1,:),1)
         end
-        vec(sum(pB_byaL(:,y,c,:),1))==Pi;
     end
 end
 
